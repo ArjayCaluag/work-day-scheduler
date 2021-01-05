@@ -57,6 +57,7 @@ textarea{
   color: white;
 }
 
+/* change camel case class */
 .save-btn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -70,3 +71,8 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
+/* Add borders for each row */
+.row {
+  border-top: lightgray solid;
+  border-bottom: lightgray solid;
+}
