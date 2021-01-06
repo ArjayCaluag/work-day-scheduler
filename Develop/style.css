@@ -73,6 +73,7 @@ textarea{
 
 /* Add borders for each row */
 .row {
-  border-top: lightgray solid;
-  border-bottom: lightgray solid;
+  border-top: white solid;
+  border-bottom: white solid;
+  
 }
