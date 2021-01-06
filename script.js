@@ -14,13 +14,15 @@ $(document).ready(function () {
         rowDiv.addClass('row time-block');
         rowDiv.attr('hours', hour);
 
+
+
         //Create Row elements and add classes
         let timeDiv = $('<div>').addClass('col-md-1');
         let textAreaDiv = $('<textarea>').addClass('description col-md-10');
         // set attribute to be called on for localStorage
-        let saveButton = $('<button>').addClass('save-btn col-md-1').attr('id', hour);
+        let saveButton = $('<button>').addClass('save-btn col-md-1').attr('id', hour) ;
 
-        let displayHour = 0;
+        
         let ampm = "";
         // conditional statement to assign time either am/pm
         if (hour > 12) {
@@ -31,8 +33,8 @@ $(document).ready(function () {
             ampm = "am";
 
         }
-
-
+        console.log(hour,displayHour,ampm)
+        
         timeDiv.text(displayHour + ampm);
         hourDiv.append(rowDiv)
         saveButton.text('Save');
